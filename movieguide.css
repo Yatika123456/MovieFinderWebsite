@@ -1,0 +1,177 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-size: 18px;
+    font-family:'Lucida Sans',  'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva,Verdana, sans-serif;
+    background-color: #000;
+    color:white;
+}
+
+
+.bg-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: -1;
+  overflow: hidden;
+}
+
+/* Add the background image, blur and opacity using ::before */
+.bg-overlay::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-image: url("bgpic.jpg"); /* replace with your image name */
+  background-size: cover;
+  background-position: center;
+  filter: blur(3px); /* blurs the background */
+  opacity: 0.3;       /* dulls the background */
+  z-index: -1;
+}
+
+.title{
+    font-size:50px;
+    font-weight: 600;
+    color: white;
+    background-color: darkred;
+    width:100%;
+    padding: 20px;
+    text-align: center;
+    
+}
+.full_body{
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+} 
+.form-input {
+    height: 50px;
+    width: 450px;
+    padding: 10px 20px;
+    font-size: 20px;
+    border: 3px groove rgb(75, 1, 1);
+    outline: none;
+    margin-right: 10px;
+}
+
+
+.form-input:focus{
+    background-color: rgb(0, 0, 0);
+    color: white;
+
+}
+
+.search{
+    background-color: rgb(3, 5, 112);
+    padding: 10px 20px;
+    color:white;
+    height: 50px;
+    width: 150px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    border:3px onset rgb(255, 255, 255);
+    font-size: 20px;  
+     cursor: pointer;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 100px auto;
+}
+
+
+.movie-cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    margin: 20px 0;
+    width: 700px;
+    border: 1px solid white;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+}
+
+
+.movie-title {
+    margin: 10px 0;
+}
+.movie-description {
+    margin-left: 20px;
+    width: 350px;
+}
+
+
+.value {
+    font-size: 16px;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .title {
+    font-size: 2rem;
+    padding: 15px;
+  }
+
+  .form-input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .search {
+    width: 100%;
+    margin-top: 10px;
+  }
+
+  .search-container {
+    flex-direction: column;
+    margin: 50px 20px;
+  }
+
+  .card {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .movie-description {
+    margin-left: 0;
+    margin-top: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 1.5rem;
+  }
+
+  .form-input, .search {
+    font-size: 16px;
+    height: 45px;
+  }
+
+  .movie-description .movie-title {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
