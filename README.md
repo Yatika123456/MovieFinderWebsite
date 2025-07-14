@@ -1,18 +1,11 @@
-# MovieHuntWebsite
+# MovieFinderWebsite
 
 ## Description:
 Designed a dynamic Movie finder webpage with HTML, CSS, and JavaScript, featuring user-friendly movie exploration and responsive design, highlighting web development skills and user-centric design principles.
 
-## Table of Contents
-- [Introduction](#introduction)
-- [Getting Started](#getting-started)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Contributing](#contributing)
+## Screenshots
 
-## Introduction
-
-Movie Hunt provides an easy way to search for movies by entering the movie name in the search box. It utilizes the OMDb API to fetch movie data and dynamically displays movie cards with relevant information such as the movie title, rating, director, released date, and genre.
-
-## Getting Started
+<img width="1440" height="778" alt="Screenshot 2025-07-14 at 9 33 01 PM" src="https://github.com/user-attachments/assets/2691ae32-fbe8-401e-9ad0-c523beb0c2b3" />
+![image](https://github.com/user-attachments/assets/c29f7a90-1e4e-4a88-bbc8-0168fece4280)
+![image](https://github.com/user-attachments/assets/f69e2c1f-01ad-44d4-bfe1-a8635704eafd)
 
